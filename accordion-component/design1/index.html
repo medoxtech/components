@@ -29,11 +29,13 @@
         }
 
         .accordion {
+            width: 700px;
+            margin: 100px auto;
+
             display: flex;
             flex-direction: column;
             gap: 44px;
-            width: 700px;
-            margin: 100px auto;
+
             line-height: 1.5;
         }
 
@@ -44,16 +46,18 @@
         .icon {
             width: 24px;
             height: 24px;
+            stroke: #087f5b;
         }
 
         .accordion__item {
+            box-shadow: 0 0 32px rgb(0, 0, 0, 0.1);
+            padding: 24px;
+
             display: grid;
             grid-template-columns: auto 1fr auto;
-            align-items: center;
             column-gap: 24px;
             row-gap: 40px;
-            box-shadow: 0 0 24px rgb(0, 0, 0, 0.1);
-            padding: 24px;
+            align-items: center;
         }
 
         .accordion__item ul {
