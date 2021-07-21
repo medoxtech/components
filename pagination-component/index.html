@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagination</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .pagination {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            display: inline-flex;
+            gap: 10px;
+        }
+
+        .btn .icon {
+            font-size: 16px;
+            stroke: #aaa;
+        }
+
+        .btn {
+            font-size: 24px;
+            width: 48px;
+            height: 48px;
+            border: none;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .btn:hover {
+            background-color: #016316;
+        }
+
+        .btn a {
+            text-decoration: none;
+        }
+
+        .btn:hover a {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagination">
+        <button class="btn btn--left"><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button class="btn btn--page-n"><a href="#">1</a></button>
+        <button class="btn btn--page-n"><a href="#">2</a></button>
+        <button class="btn btn--page-n"><a href="#">3</a></button>
+        <button class="btn btn--page-n"><a href="#">4</a></button>
+        <button class="btn btn--page-n"><a href="#">5</a></button>
+        <button class="btn btn--page-n"><a href="#">6</a></button>
+        <button class="btn btn--page-n"><a href="#">...</a></button>
+        <button class="btn btn--page-n"><a href="#">23</a></button>
+        <button class="btn btn--right"><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    <title>hero section</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            color: #fff;
+        }
+
+        .hero {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(./hero.jpg);
+            background-size: cover;
+        }
+
+
+
+
+        .btn {
+            color: inherit;
+            font-weight: 500;
+            padding: 12px 18px;
+            text-decoration: none;
+            background-color: rgb(224, 131, 10);
+            border-radius: 5px;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 5vh;
+        }
+
+        .hero-content {
+            width: 40%;
+            position: absolute;
+            top: 35%;
+        }
+
+        h1 {
+            font-size: 54px;
+            margin-bottom: 5vh;
+        }
+
+        .sub-titel {
+            font-size: 24px;
+            margin-bottom: 3vh;
+        }
+
+        .logo,
+        .navigation {
+            font-size: 24px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="container">
+            <nav class="nav-bar">
+                <div class="logo">LOGO</div>
+                <p class="navigation">NAVIGATION</p>
+            </nav>
+            <div class="hero-content">
+                <h1 class="titel">A healthy meal delivered to your door, every single day</h1>
+                <p class="sub-titel">The smart 365-days-per-year food subscribtion that will make you eat healthy again.
+                    Tailored to your personal tastes and nutritional needs
+                </p>
+                <a href="#" class="btn btn-hero">Start eating well</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
